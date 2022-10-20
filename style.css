@@ -1,0 +1,62 @@
+/*Definir 4 secciones bien marcadas (+ el forms) que serán usadas en todo el sitio web. Por ejemplo una definición de
+ una seccion es: font size del titulo, font size de texto, definir si el contenido escrito esta en la izquierda y a 
+ su derecha una imagen representativa. Ademas de las desiciones de que elementos de html estaran en la seccion se 
+ tiene que definir que estilos tendra cada “bloque” en relacion a width, height, backgrounds, padding, margin, 
+ colors, etc.
+No olvides definir tu sistema gráfico que tendrá como minimo paleta de colores definida con sus jerarquías, 
+elementos comunes (por ejemplo como serán las cards), botones, etc.
+Es importante el uso de wireframes para saber la jerarquía de contenidos en cada sección y cuando uno tiene que 
+usar esa sección.Puedes dibujarlos o usar algunas de estas apps para mejorar tus skills de producto y diseño: 
+https://www.mockflow.com/
+https://www.figma.com/
+https://www.justinmind.com/
+*Recuerda que puedes traducir la página al español en caso de estar usando chrome. Si nunca trabajaste con una 
+herramienta de este estilo lo mejor es usar lápiz y papel e incursionar en una herramienta de estas después de 
+hora. Figma es muy usada entre diseñadores y Front end developers. A continuación adjuntamos documentación de cada 
+app.
+https://zapier.com/blog/best-wireframe-tools/#mockflow
+https://zapier.com/blog/best-wireframe-tools/#Justinmind
+https://zapier.com/blog/best-wireframe-tools/#figma
+
+
+
+
+.Establecer selectores globales y para cada elemento en bloque, definiendo su diseño.
+
+.Establecer selectores para distintas clases y IDs de del documento HTML, generando homogeneidad en la línea de 
+diseño del sitio.*/
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+}
+h1 {
+    background-color: black;
+    color: aliceblue;
+    font-size: 50px;
+}
+header > div > ul > li{
+    font-size: 22px;
+
+}
+
+.class controls {
+    font-size: 20px;
+    color: rgb(9, 240, 94);
+    width: 30vw;
+    height: 10vh;
+}
+
+.texto{
+    color: white;
+}
+h4{
+    color: white;
+    font-size: 35px;
+}
+
+footer > ul > li > p {
+    font-size: 20px;
+    color: aliceblue;
+}
