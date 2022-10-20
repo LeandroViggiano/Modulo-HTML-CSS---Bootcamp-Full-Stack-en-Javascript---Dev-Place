@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7%;
+}
+.carro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7%;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+.list {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+}
+.links {
+    color: white;
+    text-decoration: white;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+.links:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+li:hover~li p {
+    animation: wave-animation 0.3s infinite;
+}
+.footer {
+
+    height: 17vh;
+    width: 100vw;
+    background-color: #002a38;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* acá empieza la parte de grid*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.grid-item{
+    border: 1 px solid black;
+
+}
+img{
+    width:60%;
+    height: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+p{
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:720px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .grid-item{
+        border: 1 px solid black;
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .grid-item{
+        border: 1px solid black;
+    }
+}
+
